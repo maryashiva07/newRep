@@ -28,3 +28,27 @@ for (let i = 0; i < fruits.length; i++){
     }
     fruits[i].style.listStyle = "none";
 }
+
+
+
+//createElement 
+
+// Write your code below:
+
+let head = document.getElementById("header");
+
+let minChild = document.createElement("h3");
+minChild.innerText = "Buy high quality organic fruits online";
+minChild.style.fontStyle = "italic";
+
+head.appendChild(minChild);
+
+let basket = document.getElementById("basket-heading");
+
+let p = document.createElement("p");
+p.id = "fruits-total";
+
+p.innerText = "Total fruits: 4";
+
+basket.appendChild(p);
+
